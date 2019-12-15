@@ -31,12 +31,28 @@ class User():
 		print(self.name + " has posted : " + text )
 		post1 = post("som3a","30/8/1240","far3on pyrimid")
 		self.posts.append(post1)	
-		for x in posts:
-			if(self.email==x.user):
-				print("post:"+str(x.content))
+
 	def get_userInfo(self):
 		print(" name " + self.name )
 		print(" email " + self.email )
 		print(" password " + self.password )
 		print(" friends " + str(self.friends_list) )
-		print("posts" + str(self.post)
+		print("post" + str(self.post))
+
+
+user1 = User("Fadi","fadithebeast@gmail.com","fadithebeast@@##"," som3a "," how are you ")
+user2 = User("trevor","trevorlinkolen@gmail.com","trevorlinkolen100%"," aljabra "," no pain no gain ")
+
+user1.add_friend("som3aya5ali@gmail.com") 
+user1.post(" FBI open up ")
+user1.get_userInfo()
+user1.remove_friend("som3aya5ali@gmail.com")
+print(users)
+
+
+user2.add_friend(" justsul@gmail.com ") 
+user2.add_friend("amigo@gmail.com")
+user2.post(" R.I.P amigos ")
+user2.get_userInfo()
+user2.remove_friend("amigo@gmail.com")
+print(users)
