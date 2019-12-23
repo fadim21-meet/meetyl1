@@ -7,10 +7,11 @@ class Animal(object):
 	def eat (self,food):
 		print("yummy!!"+ self.name + "is eating"+ food)
 	def description(self):
-		print(self.name + "is" + self.age + "years old and loves the color"+ self.favorite_color)
+		print(self.name + "is" + str(self.age) + "years old and loves the color"+ self.favorite_color)
 	def make_sound(self):
-		for i in range (3):
-			print("the sound is "+self.sound)
+		print("the sound is "+self.sound)
 cat = Animal("meow","citty",9,"red")
+cat.eat("food")
+cat.description()
 cat.make_sound()
 
