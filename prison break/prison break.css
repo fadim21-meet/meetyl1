@@ -1,0 +1,11 @@
+.chabo{
+	color:white;
+	text-align: center;
+	font-size: 100px;
+}
+
+body{
+	background-image: url("the way out.jpg");
+	background-size: cover;
+
+}
